@@ -1,0 +1,30 @@
+AllCops:
+  TargetRubyVersion: 2.2.2
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*.rb'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*.rb'
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+Style/Documentation:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/MixinUsage:
+  Exclude:
+    - 'test/dummy/bin/setup'
+    - 'test/dummy/bin/update'
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
