@@ -6,7 +6,7 @@ module Styleguide
       unless params[:path]
         params[:path] = Styleguide.page_names[0][0]
       end
-      render "pages/#{params[:path]}"
+      render "pages/#{params[:path]}", layout: "styleguide/application"
     end
   end
 end
