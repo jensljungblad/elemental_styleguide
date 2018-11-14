@@ -7,7 +7,7 @@ require "styleguide/engine"
 
 module Styleguide
   def self.pages_path
-    Rails.root.join("app", "styleguide", "pages")
+    Rails.root.join("app", "views", "styleguide")
   end
 
   def self.page_names(path = nil)

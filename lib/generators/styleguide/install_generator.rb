@@ -5,7 +5,7 @@ module Styleguide
     source_root File.expand_path("../templates", __FILE__)
 
     def create_style_guide
-      directory "styleguide", "app/styleguide"
+      directory "install", "app"
     end
   end
 end
