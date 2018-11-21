@@ -26,10 +26,10 @@ This will create the following files and directories:
 
 ```
 app/
-  layouts/
-    styleguide/
-      example.html.erb
   views/
+    layouts/
+      styleguide/
+        example.html.erb
     styleguide/
       01_home.md
 ```
