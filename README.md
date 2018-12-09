@@ -19,7 +19,7 @@ $ bundle
 Run the install generator:
 
 ```sh
-$ bin/rails g components:install
+$ bin/rails g styleguide:install
 ```
 
 This will create the following files and directories:
