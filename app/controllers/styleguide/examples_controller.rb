@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Styleguide
   class ExamplesController < ApplicationController
     helper Rails.application.helpers
