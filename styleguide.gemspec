@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $LOAD_PATH.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
@@ -18,7 +20,8 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", ">= 5.1.0"
   s.add_dependency "redcarpet", ">= 3.5.0"
-  s.add_dependency "rouge", ">= 3.1.1"
+  s.add_dependency "rouge", ">= 3.13.0"
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rubocop", "~> 0.74.0"
+  s.add_development_dependency "sqlite3", "~> 1.4.0"
 end
