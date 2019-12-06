@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-module Styleguide
+module ElementalStyleguide
   module NavigationHelper
     # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
     def navigation(pages = nil, paths = [])
       content_tag :ul do
-        (pages || Styleguide.page_names).map do |page|
+        (pages || ElementalStyleguide.page_names).map do |page|
           path, label, children = page
           path = paths.dup << path
 
@@ -13,7 +13,7 @@ module Styleguide
             if children
               [label, navigation(children, path)].join("").html_safe
             else
-              link_to label, styleguide.page_path(path)
+              link_to label, elemental_styleguide.page_path(path)
             end
           end
         end.join("").html_safe

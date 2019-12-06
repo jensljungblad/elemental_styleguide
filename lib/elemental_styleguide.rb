@@ -3,13 +3,13 @@
 require "redcarpet"
 require "rouge"
 require "rouge/plugins/redcarpet"
-require "styleguide/markdown_handler"
-require "styleguide/markdown_renderer"
-require "styleguide/engine"
+require "elemental_styleguide/markdown_handler"
+require "elemental_styleguide/markdown_renderer"
+require "elemental_styleguide/engine"
 
-module Styleguide
+module ElementalStyleguide
   def self.pages_path
-    Rails.root.join("app", "views", "styleguide")
+    Rails.root.join("app", "views", "elemental_styleguide")
   end
 
   def self.page_names(path = nil)

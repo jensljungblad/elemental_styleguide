@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-module Styleguide
+module ElementalStyleguide
   class MarkdownHandler
     class << self
       def call(template)
         @markdown_renderer ||= Redcarpet::Markdown.new(
-          Styleguide::MarkdownRenderer,
+          ElementalStyleguide::MarkdownRenderer,
           autolink: true,
           tables: true,
           fenced_code_blocks: true

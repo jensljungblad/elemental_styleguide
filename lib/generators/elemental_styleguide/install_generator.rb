@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Styleguide
+module ElementalStyleguide
   class InstallGenerator < Rails::Generators::Base
     desc "Install style guide"
 
