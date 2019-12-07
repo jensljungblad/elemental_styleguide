@@ -3,7 +3,7 @@
 module ElementalStyleguide
   class MarkdownHandler
     class << self
-      def call(template)
+      def call(template, _source)
         @markdown_renderer ||= Redcarpet::Markdown.new(
           ElementalStyleguide::MarkdownRenderer,
           autolink: true,
