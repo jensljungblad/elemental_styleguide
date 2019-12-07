@@ -6,7 +6,7 @@ module ElementalStyleguide
     helper Rails.application.routes.url_helpers
 
     def show
-      render inline: Base64.urlsafe_decode64(params[:example]), layout: "elemental_styleguide/example"
+      render inline: Base64.urlsafe_decode64(params[:example]), layout: "styleguide/example"
     end
   end
 end

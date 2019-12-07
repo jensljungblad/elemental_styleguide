@@ -15,7 +15,7 @@ class StyleguideTest < ActiveSupport::TestCase
         ["01_example_one", "Example One"],
         ["02_example_two", "Example Two"]
       ]]
-    ], Styleguide.page_names
+    ], ElementalStyleguide.page_names
   end
   # rubocop:enable Style/WordArray
 end

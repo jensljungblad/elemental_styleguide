@@ -9,7 +9,7 @@ require "elemental_styleguide/engine"
 
 module ElementalStyleguide
   def self.pages_path
-    Rails.root.join("app", "views", "elemental_styleguide")
+    Rails.root.join("app", "views", "styleguide")
   end
 
   def self.page_names(path = nil)

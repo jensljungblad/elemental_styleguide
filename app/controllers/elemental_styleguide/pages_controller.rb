@@ -8,7 +8,7 @@ module ElementalStyleguide
       unless params[:path]
         params[:path] = ElementalStyleguide.page_names[0][0]
       end
-      render "elemental_styleguide/#{params[:path]}", layout: "elemental_styleguide/application"
+      render "styleguide/#{params[:path]}", layout: "elemental_styleguide/application"
     end
   end
 end

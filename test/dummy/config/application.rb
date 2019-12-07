@@ -5,7 +5,7 @@ require_relative "boot"
 require "rails/all"
 
 Bundler.require(*Rails.groups)
-require "styleguide"
+require "elemental_styleguide"
 
 module Dummy
   class Application < Rails::Application
