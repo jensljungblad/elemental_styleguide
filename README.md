@@ -1,13 +1,13 @@
-# Styleguide
+# Elemental Style Guide
 
-Simple style guide for Rails 5.1+, designed to go well with [components](https://github.com/jensljungblad/components). The two together are inspired by the works of [Brad Frost](http://bradfrost.com) and by the [thoughts behind](http://engineering.lonelyplanet.com/2014/05/18/a-maintainable-styleguide.html) Lonely Planet's style guide [Rizzo](http://rizzo.lonelyplanet.com).
+Simple style guide for Rails 5.1+, designed to go well with [elemental_components](https://github.com/jensljungblad/elemental_components). The two together are inspired by the works of [Brad Frost](http://bradfrost.com) and by the [thoughts behind](http://engineering.lonelyplanet.com/2014/05/18/a-maintainable-styleguide.html) Lonely Planet's style guide [Rizzo](http://rizzo.lonelyplanet.com).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "styleguide", git: "https://github.com/jensljungblad/styleguide.git"
+gem "elemental_styleguide", git: "https://github.com/jensljungblad/elemental_styleguide.git"
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ $ bundle
 Run the install generator:
 
 ```sh
-$ bin/rails g styleguide:install
+$ bin/rails g elemental_styleguide:install
 ```
 
 This will create the following files and directories:
@@ -37,7 +37,7 @@ app/
 The style guide can be mounted in your routes file with:
 
 ```ruby
-mount Styleguide::Engine => "/styleguide"
+mount ElementalStyleguide::Engine => "/styleguide"
 ```
 
 You can now access the style guide at `http://localhost:3000/styleguide`.
@@ -76,7 +76,7 @@ Examples need your application's CSS and JS in order to function properly. There
 
 ## Acknowledgements
 
-This library, together with [components](https://github.com/jensljungblad/components), was inspired by the writings of [Brad Frost](http://bradfrost.com) on atomic design and living style guides, and [Rizzo](http://rizzo.lonelyplanet.com), the Lonely Planet style guide. Other inspirations were:
+This library, together with [elemental_components](https://github.com/jensljungblad/elemental_components), was inspired by the writings of [Brad Frost](http://bradfrost.com) on atomic design and living style guides, and [Rizzo](http://rizzo.lonelyplanet.com), the Lonely Planet style guide. Other inspirations were:
 
 - [Catalog](https://www.catalog.style) - style guide for React
 - [Storybook](https://storybook.js.org) - style guide for React
