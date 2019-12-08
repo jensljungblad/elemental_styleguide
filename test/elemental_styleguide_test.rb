@@ -2,7 +2,7 @@
 
 require "test_helper"
 
-class StyleguideTest < ActiveSupport::TestCase
+class ElementalStyleguideTest < ActiveSupport::TestCase
   # rubocop:disable Style/WordArray
   test "#page_names returns a hash of page names" do
     assert_equal [
