@@ -3,15 +3,15 @@
 $LOAD_PATH.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "styleguide/version"
+require "elemental_styleguide/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "styleguide"
-  s.version     = Styleguide::VERSION
+  s.name        = "elemental_styleguide"
+  s.version     = ElementalStyleguide::VERSION
   s.authors     = ["Jens Ljungblad"]
   s.email       = ["jens.ljungblad@gmail.com"]
-  s.homepage    = "https://www.github.com/jensljungblad/styleguide"
+  s.homepage    = "https://www.github.com/jensljungblad/elemental_styleguide"
   s.summary     = "Simple style guide for Rails 5.1+"
   s.description = "Simple style guide for Rails 5.1+"
   s.license     = "MIT"

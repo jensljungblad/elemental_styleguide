@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Styleguide
+module ElementalStyleguide
   class MarkdownRenderer < Redcarpet::Render::HTML
     include Rouge::Plugins::Redcarpet
 

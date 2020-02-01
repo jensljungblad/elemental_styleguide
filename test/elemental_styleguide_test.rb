@@ -2,7 +2,7 @@
 
 require "test_helper"
 
-class StyleguideTest < ActiveSupport::TestCase
+class ElementalStyleguideTest < ActiveSupport::TestCase
   # rubocop:disable Style/WordArray
   test "#page_names returns a hash of page names" do
     assert_equal [
@@ -15,7 +15,7 @@ class StyleguideTest < ActiveSupport::TestCase
         ["01_example_one", "Example One"],
         ["02_example_two", "Example Two"]
       ]]
-    ], Styleguide.page_names
+    ], ElementalStyleguide.page_names
   end
   # rubocop:enable Style/WordArray
 end

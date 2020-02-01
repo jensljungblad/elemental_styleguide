@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Styleguide
+module ElementalStyleguide
   class ExamplesController < ApplicationController
     helper Rails.application.helpers
     helper Rails.application.routes.url_helpers

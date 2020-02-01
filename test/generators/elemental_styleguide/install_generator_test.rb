@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require_relative "../../lib/generators/styleguide/install_generator"
+require_relative "../../../lib/generators/elemental_styleguide/install_generator"
 
-class InstallGeneratorTest < Rails::Generators::TestCase
-  tests Styleguide::InstallGenerator
+class ElementalStyleguide::InstallGeneratorTest < Rails::Generators::TestCase
+  tests ElementalStyleguide::InstallGenerator
   destination File.expand_path("../tmp", __dir__)
   setup :prepare_destination
 
