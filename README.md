@@ -7,7 +7,7 @@ Simple style guide for Rails 5.1+, designed to go well with [elemental_component
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "elemental_styleguide", git: "https://github.com/jensljungblad/elemental_styleguide.git"
+gem "elemental_styleguide"
 ```
 
 And then execute:
