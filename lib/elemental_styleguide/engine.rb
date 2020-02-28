@@ -8,7 +8,7 @@ module ElementalStyleguide
       if Rails::VERSION::MAJOR < 6
         ActionView::Template.register_template_handler :md, ElementalStyleguide::MarkdownHandlerRails5
       else
-        ActionView::Template.register_template_handler :md, ElementalStyleguide::MarkdownHandlerRails
+        ActionView::Template.register_template_handler :md, ElementalStyleguide::MarkdownHandler
       end
     end
   end
