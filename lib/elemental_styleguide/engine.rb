@@ -5,7 +5,11 @@ module ElementalStyleguide
     isolate_namespace ElementalStyleguide
 
     initializer "elemental_styleguide.template_hander" do
-      ActionView::Template.register_template_handler :md, ElementalStyleguide::MarkdownHandler
+      if Rails::VERSION::MAJOR < 6
+        ActionView::Template.register_template_handler :md, ElementalStyleguide::MarkdownHandlerRails5
+      else
+        ActionView::Template.register_template_handler :md, ElementalStyleguide::MarkdownHandler
+      end
     end
   end
 end
