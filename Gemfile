@@ -13,7 +13,6 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 gem "appraisal"
-gem "puma" # TODO: remove?
+gem "puma"
 gem "rubocop"
-gem "sprockets-rails" # TODO: remove?
 gem "sqlite3"
