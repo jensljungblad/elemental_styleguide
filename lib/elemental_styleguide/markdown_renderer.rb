@@ -33,7 +33,7 @@ module ElementalStyleguide
       pieces = code.split("---")
 
       if pieces.length > 1
-        options = pieces[0].split("\n").map { |i| i.split(": ") }.to_h
+        options = pieces[0].split("\n").to_h { |i| i.split(": ") }
         [options, pieces[1]]
       else
         options = {}

@@ -11,12 +11,12 @@ module ElementalStyleguide
 
           content_tag :li do
             if children
-              [label, navigation(children, path)].join("").html_safe
+              [label, navigation(children, path)].join.html_safe
             else
               link_to label, elemental_styleguide.page_path(path)
             end
           end
-        end.join("").html_safe
+        end.join.html_safe
       end
     end
     # rubocop:enable Metrics/MethodLength

@@ -14,7 +14,7 @@ module ElementalStyleguide
 
   def self.page_names(path = nil)
     Dir.chdir(path || pages_path) do
-      Dir.glob("*").sort.map do |item|
+      Dir.glob("*").map do |item|
         [
           item.sub(/\..*/, ""),
           item.sub(/\..*/, "").sub(/[0-9]*_?/, "").titleize
