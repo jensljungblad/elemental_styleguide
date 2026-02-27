@@ -2,7 +2,7 @@
 
 module ElementalStyleguide
   module NavigationHelper
-    # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+    # rubocop:disable Metrics/MethodLength
     def navigation(pages = nil, paths = [])
       content_tag :ul do
         (pages || ElementalStyleguide.page_names).map do |page|
@@ -19,6 +19,6 @@ module ElementalStyleguide
         end.join("").html_safe
       end
     end
-    # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
+    # rubocop:enable Metrics/MethodLength
   end
 end

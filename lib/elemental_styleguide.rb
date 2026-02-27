@@ -3,7 +3,6 @@
 require "redcarpet"
 require "rouge"
 require "rouge/plugins/redcarpet"
-require "elemental_styleguide/markdown_handler_rails5"
 require "elemental_styleguide/markdown_handler"
 require "elemental_styleguide/markdown_renderer"
 require "elemental_styleguide/engine"
