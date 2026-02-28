@@ -3,7 +3,6 @@
 require "redcarpet"
 require "rouge"
 require "rouge/plugins/redcarpet"
-require "elemental_styleguide/markdown_handler_rails5"
 require "elemental_styleguide/markdown_handler"
 require "elemental_styleguide/markdown_renderer"
 require "elemental_styleguide/engine"
@@ -15,7 +14,7 @@ module ElementalStyleguide
 
   def self.page_names(path = nil)
     Dir.chdir(path || pages_path) do
-      Dir.glob("*").sort.map do |item|
+      Dir.glob("*").map do |item|
         [
           item.sub(/\..*/, ""),
           item.sub(/\..*/, "").sub(/[0-9]*_?/, "").titleize

@@ -4,7 +4,11 @@
 
 source "https://rubygems.org"
 
-gem "pry", group: %i[development test]
-gem "rails", "~> 5.1"
+gem "appraisal"
+gem "puma"
+gem "rails", "~> 7.2"
+gem "rubocop"
+gem "sprockets-rails"
+gem "sqlite3"
 
 gemspec path: "../"
