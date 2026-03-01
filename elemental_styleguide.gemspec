@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", ">= 7.2.0"
   s.add_dependency "redcarpet", ">= 3.5.0"
-  s.add_dependency "rouge", ">= 3.13.0"
 
   s.metadata["rubygems_mfa_required"] = "true"
 end

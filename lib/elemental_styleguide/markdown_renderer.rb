@@ -2,27 +2,29 @@
 
 module ElementalStyleguide
   class MarkdownRenderer < Redcarpet::Render::HTML
-    include Rouge::Plugins::Redcarpet
-
     def block_quote(quote)
-      <<-BLOCKQUOTE
+      <<-BLOCK_QUOTE
         <blockquote class="border-5 border-start border-secondary-subtle ps-3">
           #{quote}
         </blockquote>
-      BLOCKQUOTE
+      BLOCK_QUOTE
     end
 
     def block_code(code, language)
       case language
       when "example"
-        options, code = parse_options(code)
-        example(code, options)
+        example(code)
       else
-        super
+        <<-BLOCK_CODE
+          <pre><code class="language-#{language} bg-body-tertiary">#{code}</code></pre>
+        BLOCK_CODE
       end
     end
 
-    def example(code, options)
+    # rubocop:disable Metrics/MethodLength
+    def example(code)
+      options, code = parse_options(code)
+
       <<-EXAMPLE
         <div class="card shadow-sm">
           <div class="card-body">
@@ -32,11 +34,12 @@ module ElementalStyleguide
                     class="d-block"></iframe>
           </div>
           <div class="card-footer">
-            #{block_code(code.strip, 'erb')}
+            <pre class="mb-0"><code class="language-erb bg-transparent p-0">#{code}</code></pre>
           </div>
         </div>
       EXAMPLE
     end
+    # rubocop:enable Metrics/MethodLength
 
     private
 
