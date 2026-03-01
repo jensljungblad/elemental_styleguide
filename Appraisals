@@ -2,6 +2,7 @@
 
 appraise "rails-7" do
   gem "rails", "~> 7.2"
+  gem "minitest", "< 6"
   gem "sprockets-rails"
 end
 
