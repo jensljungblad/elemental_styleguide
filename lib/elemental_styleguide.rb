@@ -6,6 +6,15 @@ require "elemental_styleguide/markdown_renderer"
 require "elemental_styleguide/engine"
 
 module ElementalStyleguide
+  def self.message_verifier
+    @message_verifier ||= ActiveSupport::MessageVerifier.new(
+      Rails.application.secret_key_base,
+      digest: "SHA256",
+      serializer: ActiveSupport::MessageEncryptor::NullSerializer,
+      url_safe: true
+    )
+  end
+
   def self.pages_path
     Rails.root.join("app", "views", "styleguide")
   end
