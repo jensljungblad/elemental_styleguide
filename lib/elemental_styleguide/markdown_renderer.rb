@@ -28,7 +28,7 @@ module ElementalStyleguide
       <<-EXAMPLE
         <div class="card shadow-sm">
           <div class="card-body">
-            <iframe src="/styleguide/example?example=#{Base64.urlsafe_encode64(code)}"
+            <iframe src="#{ElementalStyleguide.example_path(code)}"
                     width="#{options['width'] || '100%'}"
                     height="#{options['height'] || 'auto'}"
                     class="d-block"></iframe>

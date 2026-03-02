@@ -6,7 +6,10 @@ module ElementalStyleguide
     helper Rails.application.routes.url_helpers
 
     def show
-      render inline: Base64.urlsafe_decode64(params[:example]), layout: "styleguide/example"
+      code = ElementalStyleguide.message_verifier.verify(params[:example])
+      render inline: code, layout: "styleguide/example"
+    rescue ActiveSupport::MessageVerifier::InvalidSignature
+      head :forbidden
     end
   end
 end
