@@ -5,3 +5,29 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ```example
 <%= "Hello world" %>
 ```
+
+```example
+<button class="btn btn-primary">
+  Primary
+</button>
+<button class="btn btn-success">
+  Success
+</button>
+<button class="btn btn-danger">
+  Success
+</button>
+```
+
+```example
+width: 400px
+---
+<div class="card">
+  <div class="card-header">
+    Lorem ipsum
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Dolor sit amet</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet</p>
+  </div>
+</div>
+```

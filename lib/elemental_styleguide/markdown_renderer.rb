@@ -26,7 +26,7 @@ module ElementalStyleguide
       options, code = parse_options(code)
 
       <<-EXAMPLE
-        <div class="card shadow-sm">
+        <div class="card shadow-sm mb-4">
           <div class="card-body">
             <iframe src="#{ElementalStyleguide.example_path(code)}"
                     width="#{options['width'] || '100%'}"
@@ -34,7 +34,7 @@ module ElementalStyleguide
                     class="d-block"></iframe>
           </div>
           <div class="card-footer">
-            <pre class="mb-0"><code class="language-erb bg-transparent p-0">#{code}</code></pre>
+            <pre class="mb-0"><code class="language-erb bg-transparent p-0">#{ERB::Util.html_escape(code)}</code></pre>
           </div>
         </div>
       EXAMPLE
