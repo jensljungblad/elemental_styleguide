@@ -11,6 +11,7 @@ module ElementalStyleguide
 
     test "install generator" do
       run_generator
+      assert_file "app/controllers/styleguide/examples_controller.rb"
       assert_file "app/views/layouts/styleguide/example.html.erb"
       assert_file "app/views/styleguide/01_home.md"
     end
