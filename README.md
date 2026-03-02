@@ -26,6 +26,9 @@ This will create the following files and directories:
 
 ```
 app/
+  controllers/
+    styleguide/
+      examples_controller.rb
   views/
     layouts/
       styleguide/
@@ -72,7 +75,7 @@ height: 200
 ```
 ````
 
-Examples need your application's CSS and JS in order to function properly. There is an `app/views/layouts/styleguide/example.html.erb` layout file that examples are rendered within. This file can be modified in order to add additional tags to the header, like the `javascript_pack_tag` when using the webpacker gem, or classes and styles to the body tag.
+Examples need your application's CSS and JS in order to function properly. There is an `app/views/layouts/styleguide/example.html.erb` layout file that examples are rendered within. This file can be modified in order to include any CSS and JS needed.
 
 ## Acknowledgements
 
