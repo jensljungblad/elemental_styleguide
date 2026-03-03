@@ -21,7 +21,6 @@ module ElementalStyleguide
       end
     end
 
-    # rubocop:disable Metrics/MethodLength
     def example(code)
       options, code = parse_options(code)
 
@@ -39,7 +38,6 @@ module ElementalStyleguide
         </div>
       EXAMPLE
     end
-    # rubocop:enable Metrics/MethodLength
 
     private
 
